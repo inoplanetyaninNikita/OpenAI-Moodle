@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 function openAI(text)
 {
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer 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");
+    myHeaders.append("Authorization", "Bearer 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");
     myHeaders.append("OpenAI-Organization", "org-AmCry3gCKitaXS4PHYX9mhps");
     myHeaders.append("Content-Type", "application/json");
 
@@ -55,7 +55,6 @@ var element = document.evaluate('/html/body/div[1]/div[3]/div/div[3]/div/section
 if (element != null)
 {
     var note = ""
-    alert(answer)
     var answer = document.evaluate('/html/body/div[1]/div[3]/div/div[3]/div/section[1]/div/form/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/input', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
     if(answer != null && answer.type == 'radio') {note = ' Выбери один ответ.'}
     
