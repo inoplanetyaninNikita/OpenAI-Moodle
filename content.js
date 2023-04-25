@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 function openAI(text)
 {
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer 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");
+    myHeaders.append("Authorization", "Bearer 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");
     myHeaders.append("OpenAI-Organization", "org-AmCry3gCKitaXS4PHYX9mhps");
     myHeaders.append("Content-Type", "application/json");
 
